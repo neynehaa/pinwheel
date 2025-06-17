@@ -61,7 +61,7 @@ export default function Hero() {
          
         <div className="md:w-1/2 text-left ">
           <h1 className="text-5xl font-bold leading-tight text-gray-900">
-            Scale design & dev
+            Scale design & devv
             <br />
             operations with
             <br />
