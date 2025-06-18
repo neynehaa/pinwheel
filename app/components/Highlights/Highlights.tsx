@@ -1,3 +1,6 @@
+'use client'
+
+
 import React from "react";
 import Image from "next/image";
 import { Merriweather } from "next/font/google";
@@ -35,45 +38,45 @@ const Highlights = () => {
     {
       title: "Gesture Navigation",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icon: "/feature-icon-3.svg",
+      icon: "/feature-icon-4.svg",
     },
     {
       title: "Dark Theme",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icon: "/feature-icon-4.svg",
+      icon: "/feature-icon-5.svg",
     },
     {
       title: "Privacy Controls",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icon: "/feature-icon-5.svg",
+      icon: "/feature-icon-6.svg",
     },
     {
       title: "Location Controls",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icon: "/feature-icon-6.svg",
+      icon: "/feature-icon-7.svg",
     },
     {
       title: "Security Updates",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icon: "/feature-icon-7.svg",
+      icon: "/feature-icon-8.svg",
     },
     {
       title: "Focus Mode",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icon: "/feature-icon-8.svg",
+      icon: "/feature-icon-9.svg",
     },
     {
       title: "Family Link",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icon: "/feature-icon-9.svg",
+      icon: "/feature-icon-10.svg",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-50 pt-3">
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* Header */}
+          
           <div className="flex flex-col md:flex-row justify-between items-start mb-8 gap-4">
             <div className="md:max-w-[40%]">
               <div className={merriweather.className}>
@@ -86,7 +89,7 @@ const Highlights = () => {
               </div>
             </div>
             <div>
-              <p className={`text-gray-600 text-base ${poppins.className}`}>
+              <p className={`text-gray-400 text-base font-["Poppins"] mr-20`}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 <br />
                 Morbi egestas Werat viverra id et aliquet. vulputate
@@ -104,7 +107,7 @@ const Highlights = () => {
               >
                 <div className="h-full flex flex-col">
                   <div className="flex-grow">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                    <h2 className={`${merriweather.className} text-xl font-semibold text-gray-800 mb-2`}>
                       {feature.title}
                     </h2>
                     <p className="text-gray-600">{feature.description}</p>
@@ -133,88 +136,3 @@ const Highlights = () => {
 };
 
 export default Highlights;
-
-// import React from 'react';
-
-// const Highlights = () => {
-//   const features = [
-//     {
-//       title: "Live Caption",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//     },
-//     {
-//       title: "Smart Reply",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//     },
-//     {
-//       title: "Sound Amplifier",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//     },
-//     {
-//       title: "Gesture Navigation",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//     },
-//     {
-//       title: "Dark Theme",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//     },
-//     {
-//       title: "Privacy Controls",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//     },
-//     {
-//       title: "Location Controls",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//     },
-//     {
-//       title: "Security Updates",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//     },
-//     {
-//       title: "Focus Mode",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//     },
-//     {
-//       title: "Family Link",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//     }
-//   ];
-
-//   return (
-//     <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
-//       <div className="max-w-7xl mx-auto"> {/* Increased max-width */}
-//         {/* Header row with heading on far left and text on far right */}
-//         <div className="flex flex-col md:flex-row justify-between items-start mb-8 gap-4">
-//           <div className="md:max-w-[40%]"> {/* Left-aligned heading */}
-//             <h1 className="text-3xl font-bold text-gray-900">
-//               The Highlighting Part Of Our Solution
-//             </h1>
-//           </div>
-//           <div className="md:max-w-[50%] md:text-right"> {/* Right-aligned paragraph */}
-//             <p className="text-gray-600">
-//               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-//               Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
-//             </p>
-//           </div>
-//         </div>
-
-//         {/* Features grid */}
-//        <div className="bg-white p-8 rounded-xl shadow-md"> {/* Container box */}
-//             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-//               {features.map((feature, index) => (
-//                 <div
-//                   key={index}
-//                   className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors border border-gray-200"
-//                 >
-//                   <h2 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h2>
-//                   <p className="text-gray-600">{feature.description}</p>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Highlights;
