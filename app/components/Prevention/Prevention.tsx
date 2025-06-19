@@ -32,10 +32,10 @@ const Prevention = () => {
   ];
 
   return (
-    <section className="py-8 md:py-16 bg-gray-50 px-4 sm:px-6 lg:px-8">
+    <section className="py-8 md:py-16 bg-[#fafafa] px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-          {/* Text Content */}
+           
           <div className="w-full lg:w-1/2 lg:pl-8 xl:pl-12">
             <h1 className={`text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 ${merriweather.className}`}>
               Prevent failure from<br /> 
@@ -58,7 +58,7 @@ const Prevention = () => {
             </div>
           </div>
 
-          {/* Image Content */}
+          
           <div className="w-full lg:w-1/2">
             <div className="relative h-[300px] sm:h-[350px] md:h-[400px] w-full">
               <Image

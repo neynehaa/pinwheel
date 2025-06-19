@@ -1,6 +1,5 @@
 'use client'
 
-
 import React from "react";
 import Image from "next/image";
 import { Merriweather } from "next/font/google";
@@ -73,10 +72,10 @@ const Highlights = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-3">
+    <div className="min-h-screen bg-[#fafafa] pt-3">
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          
+
           <div className="flex flex-col md:flex-row justify-between items-start mb-8 gap-4">
             <div className="md:max-w-[40%]">
               <div className={merriweather.className}>

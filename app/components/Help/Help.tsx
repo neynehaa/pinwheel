@@ -19,7 +19,7 @@ const merriweather = Merriweather({
 
 export default function Help() {
   return (
-    <section className="w-full py-16 px-6 bg-gray-50 -mt-8">
+    <section className="w-full py-16 px-6 bg-[#fafafa] -mt-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-10">
         <div className="w-full md:w-1/2 text-gray-900">
           <h1
