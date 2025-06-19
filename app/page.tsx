@@ -6,7 +6,11 @@ import Highlights from "./components/Highlights/Highlights";
 import Prevention from "./components/Prevention/Prevention";
 import Accept from "./components/Accept/Accept";
 import Accountability from "./components/Accountability/Accountability";
-import Customer from "./components/Customer/Customer";
+import CustomerWithCarousel from "./components/Customer/CustomerWithCarousel";
+// import Carousel from "./components/Carousel/Carousel";
+import Head from "next/head";
+import Help from "./components/Help/Help";
+import Footer from "./components/Footer/Footer";
 
 export default function HomePage() {
   return (
@@ -17,7 +21,11 @@ export default function HomePage() {
       <Prevention />
       <Accept />
       <Accountability />
-      <Customer />
+   
+      {/* <Carousel /> */}
+      <CustomerWithCarousel />
+      <Help />
+      <Footer />
 
       </>
 

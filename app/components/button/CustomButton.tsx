@@ -1,11 +1,10 @@
- 
 'use client';
 
 import React from 'react';
 import Link from 'next/link';
-
 import { Poppins } from 'next/font/google';
 import clsx from 'clsx';
+
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['500'],
@@ -30,11 +29,11 @@ const CustomButton = ({
   className = '',
 }: ButtonProps) => {
   const baseStyle =
-    'rounded-full px-6 py-3 text-sm transition-all duration-200 shadow-md';
+    'rounded-full px-8 py-4 text-base transition-all duration-200 shadow-md'; // Increased padding and text size
 
   const variants = {
-    primary: 'bg-white text-black hover:shadow-lg',
-    outline: 'bg-white text-gray-900 border border-gray-200 hover:bg-gray-100',
+    primary: 'bg-white text-gray-600 hover:shadow-lg', // Changed text color to gray-600
+    outline: 'bg-white text-gray-600 border border-gray-200 hover:bg-gray-100', // Changed text color
     mobile: 'bg-orange-600 text-white font-semibold hover:bg-orange-700 text-center',
   };
 

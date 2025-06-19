@@ -1,134 +1,86 @@
-// components/Footer.tsx
-import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import React from 'react';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
+
+const socials = [
+  { src: '/fb.svg', alt: 'Facebook' },
+  { src: '/icons/twitter.png', alt: 'Twitter' },
+  { src: '/link.svg', alt: 'LinkedIn' },
+  { src: '/skype.svg', alt: 'Skype' },
+];
+
+const quickLinks = ['About', 'Category', 'Testimonial', 'Contact'];
 
 const Footer = () => {
-  // Quick Links data
-  const quickLinks = [
-    { name: "About", href: "/about" },
-    { name: "Category", href: "/category" },
-    { name: "Testimonial", href: "/testimonial" },
-    { name: "Contact", href: "/contact" }
-  ];
-
-  // Social media icons (using image files)
-  const socialIcons = [
-    { name: "Facebook", src: "/icons/facebook.svg", href: "#", width: 20, height: 20 },
-    { name: "Twitter", src: "/icons/twitter.svg", href: "#", width: 20, height: 20 },
-    { name: "Instagram", src: "/icons/instagram.svg", href: "#", width: 20, height: 20 },
-    { name: "LinkedIn", src: "/icons/linkedin.svg", href: "#", width: 20, height: 20 }
-  ];
-
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Brand Info */}
-          <div className="space-y-4">
-            <div className="flex items-center">
-              <Image 
-                src="/icons/pinwheel-logo.png" 
-                alt="Pinwheel Logo"
-                width={40}
-                height={40}
-                className="mr-3"
-              />
-              <h2 className="text-2xl font-bold text-white">Pinwheel</h2>
-            </div>
-            <p className="text-gray-400">
-              Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing.
-            </p>
-            
-            <div className="pt-4">
-              <h3 className="text-lg font-semibold text-white mb-3">Socials</h3>
-              <div className="flex space-x-4">
-                {socialIcons.map((icon, index) => (
-                  <a 
-                    key={index} 
-                    href={icon.href} 
-                    className="text-gray-400 hover:text-white transition-colors"
-                    aria-label={icon.name}
-                  >
-                    <Image 
-                      src={icon.src}
-                      alt={icon.name}
-                      width={icon.width}
-                      height={icon.height}
-                      className="object-contain"
-                    />
-                  </a>
-                ))}
-              </div>
-              <div className="flex items-center mt-4">
-                <Image 
-                  src="/icons/email.svg"
-                  alt="Email"
-                  width={20}
-                  height={20}
-                  className="mr-2"
-                />
-                <a 
-                  href="mailto:themefisher@gmail.com" 
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  themefisher@gmail.com
-                </a>
-              </div>
-            </div>
-          </div>
+    <footer className={`mt-80 bg-gray-200 text-gray-700 pt-16 pb-16 px-6 ${poppins.className}`}>
 
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">Quick Links</h3>
-            <div className="h-px bg-gray-700 w-16"></div>
-            <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <Link 
-                    href={link.href} 
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
 
-          {/* Contact Info */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">Location & Contact</h3>
-            <div className="h-px bg-gray-700 w-16"></div>
-            <address className="not-italic text-gray-400 space-y-2">
-              <div className="flex items-start">
-                <Image 
-                  src="/icons/location.svg" 
-                  alt="Location"
-                  width={16}
-                  height={16}
-                  className="mr-2 mt-1"
-                />
-                <p>2IB Thornridge Cir. Syracuse, Connecticut 35624</p>
+      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+         
+        <div>
+          <div className="flex items-center mb-4">
+            <Image
+              src="/logo.svg" 
+              alt="Logo"
+              width={100}
+              height={100}
+              className="mr-2"
+            />
+            <span className="text-3xl font-bold text-black"></span>
+          </div>
+          <p className="text-gray-500">
+            Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus,
+            sed condimentum volutpat.
+          </p>
+        </div>
+
+         
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Socials</h3>
+          <p className="mb-4">themefisher@gmail.com</p>
+          <div className="flex gap-4">
+            {socials.map(({ src, alt }, idx) => (
+              <div
+                key={idx}
+                className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center"
+              >
+                <Image src={src} alt={alt} width={20} height={20} />
               </div>
-              <div className="flex items-center">
-                <Image 
-                  src="/icons/phone.svg"
-                  alt="Phone"
-                  width={16}
-                  height={16}
-                  className="mr-2"
-                />
-                <p>(704) 555-0127</p>
-              </div>
-            </address>
+            ))}
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-          <p>Designed And Developed by Themefisher | Distributed by Themewagon</p>
+       
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul className="space-y-2">
+            {quickLinks.map((text, idx) => (
+              <li key={idx} className="text-gray-700">
+                {text}
+              </li>
+            ))}
+          </ul>
         </div>
+
+       
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Location & Contact</h3>
+          <p>2118 Thornridge Cir. Syracuse,</p>
+          <p>Connecticut 35624</p>
+          <p>(704) 555-0127</p>
+        </div>
+      </div>
+
+      
+      <div className="text-center text-sm text-gray-500 mt-12 border-t pt-4">
+        Designed And Developed by Themefisher | Distributed by ThemeWagon
       </div>
     </footer>
   );
