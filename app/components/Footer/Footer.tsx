@@ -41,7 +41,9 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-[15px] font-semibold mb-4 ml-5 mt-6 text-[#22222f]">Socials</h3>
+          <h3 className="text-[15px] font-semibold mb-4 ml-5 mt-6 text-[#22222f]">
+            Socials
+          </h3>
           <p className="mb-4 text-[#9CA3AF] text-sm">themefisher@gmail.com</p>
           <div className="flex gap-4">
             {socials.map(({ src, alt }, idx) => (
@@ -56,7 +58,9 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-[15px] mt-6 ml-5 text-[222222f] font-semibold mb-4">Quick Links</h3>
+          <h3 className="text-[15px] mt-6 ml-5 text-[222222f] font-semibold mb-4">
+            Quick Links
+          </h3>
           <ul className="space-y-2">
             {quickLinks.map((text, idx) => (
               <li key={idx} className="text-[#9CA3AF] ml-5 text-sm">
@@ -67,16 +71,16 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-[15px] mt-6 ml-5 text-[222222f] font-semibold mb-4">Location & Contact</h3>
-          <p className="text-[#9CA3AF] ml-5 text-sm">2118 Thornridge Cir. Syracuse,
+          <h3 className="text-[15px] mt-6 ml-5 text-[222222f] font-semibold mb-4">
+            Location & Contact
+          </h3>
+          <p className="text-[#9CA3AF] ml-5 text-sm">
+            2118 Thornridge Cir. Syracuse,
             <br />
             Connecticut 35624
             <br />
             (704) 555-0127
-            </p>
-          
-          
-          
+          </p>
         </div>
       </div>
 

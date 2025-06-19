@@ -6,14 +6,10 @@ import Highlights from "./components/Highlights/Highlights";
 import Prevention from "./components/Prevention/Prevention";
 import Accept from "./components/Accept/Accept";
 import Accountability from "./components/Accountability/Accountability";
-import CustomerWithCarousel from "./components/Customer/CustomerWithCarousel";
- 
 import Head from "next/head";
 import Help from "./components/Help/Help";
 import Footer from "./components/Footer/Footer";
-import Component from "./components/test";
-import TestimonialCarousel from "./components/test2";
-
+import CustomerWithCarousel from "./components/Customer/CustomerWithCarousel";
 
 export default function HomePage() {
   return (
@@ -24,17 +20,12 @@ export default function HomePage() {
       <Prevention />
       <Accept />
       <Accountability />
-   
-       
-      {/* <CustomerWithCarousel /> */}
-      <TestimonialCarousel />
+
+      <CustomerWithCarousel />
+
       <Help />
-      <Component />
+
       <Footer />
-
-      </>
-
-
-    
+    </>
   );
 }

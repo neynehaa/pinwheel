@@ -47,7 +47,6 @@ export default function Accountability() {
           </div>
         </div>
 
-
         <div className="relative w-full md:w-[70%] flex justify-center mr-21">
           <Image
             src="/video.png"
@@ -57,8 +56,9 @@ export default function Accountability() {
             className="object-contain"
           />
 
-
-          <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${styles.pulseAnimation}`}>
+          <div
+            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${styles.pulseAnimation}`}
+          >
             <svg
               xmlns="/play.png"
               className="w-18 h-18 text-white bg-[#ff7300] rounded-full p-3 shadow-lg"
@@ -69,7 +69,6 @@ export default function Accountability() {
             </svg>
           </div>
         </div>
-
       </div>
     </section>
   );
