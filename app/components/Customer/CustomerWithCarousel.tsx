@@ -51,7 +51,7 @@ export default function CustomerWithCarousel() {
     },
   ];
 
-  // Repeat the items to simulate looping
+  
   const allCards = [...carouselItems, ...carouselItems, ...carouselItems];
 
   const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -87,7 +87,7 @@ export default function CustomerWithCarousel() {
   return (
     <section className="w-full py-16 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-10 mb-24">
-        {/* Left column - Heading */}
+    
         <div className="w-full md:w-1/2 text-gray-900">
           <h1 className={`text-4xl font-bold mb-6 ${merriweather.className}`}>
             Our customers have nice
@@ -96,7 +96,7 @@ export default function CustomerWithCarousel() {
           </h1>
         </div>
 
-        {/* Right column - Paragraph */}
+       
         <div className="w-full md:w-1/2 text-gray-900 md:pr-10 ml-87">
           <p
             className={`text-gray-500 text-lg font-light ${poppins.className}`}
@@ -129,7 +129,7 @@ export default function CustomerWithCarousel() {
                   key={`card-${index}`}
                   className="relative bg-white pt-20 pb-8 px-6 md:px-8 rounded-xl shadow-md hover:shadow-lg transition-all text-center flex-shrink-0 w-full md:w-1/3"
                 >
-                  {/* User image circle */}
+                  
                   <div className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-20">
                     <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-to-r from-orange-400 to-yellow-300 p-1 shadow-md">
                       <div className="w-full h-full rounded-full overflow-hidden">
