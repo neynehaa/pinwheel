@@ -1,65 +1,3 @@
-// "use client";
-
-// import React from "react";
-// import { Poppins } from "next/font/google";
-// import { Merriweather } from "next/font/google";
-// import CustomButton from "../button/CustomButton";
-
-// const poppins = Poppins({
-//   subsets: ["latin"],
-//   weight: ["400"],
-//   display: "swap",
-// });
-
-// const merriweather = Merriweather({
-//   subsets: ["latin"],
-//   weight: ["400"],
-//   display: "swap",
-// });
-
-// export default function Help() {
-//   return (
-//     <section className="w-full py-16 px-6 bg-[#fafafa] -mt-1">
-//   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-10">
-    
-//     {/* Left Column */}
-//     <div className="w-full md:w-1/2 text-gray-900 mt-16">
-//       <h1
-//         className={`text-4xl font-bold text-gray-900 mb-6 ml-20 ${merriweather.className}`}
-//       >
-//         Helping teams in the
-//         <br />
-//         world with focus
-//       </h1>
-//       <div className="ml-20">
-//         <CustomButton
-//           label="Download the theme"
-//           variant="primary"
-//           onClick={() => console.log("Button clicked")}
-//         />
-//       </div>
-//     </div>
-
-//     {/* Right Column */}
-//     <div className="w-full md:w-1/2 text-gray-900 ml-40 mt-16">
-//       <p
-//         className={`text-gray-500 text-lg font-light ${poppins.className}`}
-//       >
-//         Lorem ipsum dolor sit amet, consectetur
-//         <br />
-//         adipiscing elit. Morbi egestas Werat viverra id et
-//         <br />
-//         aliquet. vulputate egestas sollicitudin.
-//       </p>
-//     </div>
-    
-//   </div>
-// </section>
-
-//   );
-// }
-
-
 "use client";
 
 import React from "react";
@@ -81,28 +19,40 @@ const merriweather = Merriweather({
 
 export default function Help() {
   return (
-    <section className="w-full py-16 px-6 -mt-1">
-      <div className="max-w-6xl mx-auto">
-        <div className="bg-gradient-to-br from-[#fa828b] via-[#fb9b76] to-[#fdc557] rounded-3xl p-8 md:p-12 lg:p-16">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            {/* Left Column - Heading and Button */}
-            <div className="space-y-8">
-              <h1 className={`text-4xl md:text-5xl font-bold text-white leading-tight ${merriweather.className}`}>
+    <section className="w-full py-8 md:py-16 px-4 sm:px-6 bg-[#fafafa]">
+      {" "}
+      {/* Keep original light color */}
+      <div className="w-full max-w-7xl mx-auto">
+        <div
+          className="rounded-tl-lg rounded-tr-lg rounded-bl-[60px] sm:rounded-bl-[80px] rounded-br-[60px] sm:rounded-br-[80px] p-6 sm:p-9 md:p-12 lg:p-16 xl:p-21"
+          style={{
+            background: `linear-gradient(to bottom, #fa709a 0%, #fca172 50%, #fdb068 100%)`,
+          }}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4 sm:space-y-6 md:space-y-8">
+              <h1
+                className={`text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-snug sm:leading-tight ${merriweather.className}`}
+              >
                 Helping teams in the world with focus
               </h1>
               <CustomButton
                 label="Download the theme"
                 variant="primary"
-                className="bg-white text-gray-900 hover:bg-gray-100 rounded-full px-8 py-3 text-base font-medium"
+                className="bg-white text-gray-900 hover:bg-gray-100 rounded-full px-6 py-2 sm:px-8 sm:py-3 text-sm sm:text-base font-medium"
                 onClick={() => console.log("Button clicked")}
               />
             </div>
 
-            {/* Right Column - Text Content */}
-            <div className={`text-white/90 text-lg leading-relaxed ${poppins.className}`}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet.
-                vulputate egestas sollicitudin.
+            <div
+              className={`text-white text-base sm:text-lg md:ml-8 lg:ml-12 ${poppins.className}`}
+            >
+              <p className="mb-4 sm:mb-0">
+                Lorem ipsum dolor sit amet, consectetur
+                <br className="hidden sm:block" />
+                adipiscing elit. Morbi egestas Werat viverra id et
+                <br className="hidden sm:block" />
+                aliquet. vulputate egestas sollicitudin.
               </p>
             </div>
           </div>

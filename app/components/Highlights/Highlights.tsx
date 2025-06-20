@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -72,10 +72,9 @@ const Highlights = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fafafa] pt-3">
+    <div className="relative bg-[#fafafa] pt-12 pb-20 -mt-px">
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-
           <div className="flex flex-col md:flex-row justify-between items-start mb-8 gap-4">
             <div className="md:max-w-[40%]">
               <div className={merriweather.className}>
@@ -98,7 +97,7 @@ const Highlights = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-19">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-29">
             {features.map((feature, index) => (
               <div
                 key={index}
@@ -106,7 +105,9 @@ const Highlights = () => {
               >
                 <div className="h-full flex flex-col">
                   <div className="flex-grow">
-                    <h2 className={`${merriweather.className} text-xl font-semibold text-gray-800 mb-2`}>
+                    <h2
+                      className={`${merriweather.className} text-xl font-semibold text-gray-800 mb-2`}
+                    >
                       {feature.title}
                     </h2>
                     <p className="text-gray-600">{feature.description}</p>

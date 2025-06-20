@@ -48,16 +48,26 @@ export default function Accountability() {
         </div>
 
         <div className="relative w-full md:w-[70%] flex justify-center mr-21">
+          <div className="absolute bottom-[-28px] right-[-50px] z-0">
+            <Image
+              src="/circle.svg"
+              alt="Decorative Circle"
+              width={170}
+              height={170}
+              className="opacity-80 object-contain"
+            />
+          </div>
+
           <Image
             src="/video.png"
             alt="video"
             width={1700}
             height={1700}
-            className="object-contain"
+            className="object-contain relative z-10"
           />
 
           <div
-            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${styles.pulseAnimation}`}
+            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${styles.pulseAnimation} z-20`}
           >
             <svg
               xmlns="/play.png"

@@ -20,7 +20,7 @@ const quickLinks = ["About", "Category", "Testimonial", "Contact"];
 const Footer = () => {
   return (
     <footer
-      className={`mt-80 bg-[#f0f0f0] text-gray-700 pt-16 pb-16 px-6 ${poppins.className}`}
+      className={`mt-0 bg-[#ebebeb] text-gray-700 pt-16 pb-16 px-6 ${poppins.className}`}
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
         <div>

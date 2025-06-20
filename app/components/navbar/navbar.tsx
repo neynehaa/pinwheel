@@ -48,15 +48,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    
-
-<header
-  className={` top-0 left-0 w-full z-50 transition-all duration-300 ${
-    scrolled ? "bg-gray-50 shadow-md py-4" : "bg-transparent py-7"
-  } ${poppins.className}`}
->
-
-
+    <header
+      className={` absolute top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white bg-opacity-70 backdrop-blur-md shadow-md py-4"
+          : "bg-transparent py-7"
+      } ${poppins.className}`}
+    >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="-ml-6">
           <Image
@@ -120,7 +118,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:inline-block">
-          <CustomButton label="Sign Up" href="/signup" variant="primary" />
+          <CustomButton label="Sign Up Now" href="/signup" variant="primary" />
         </div>
 
         <button
@@ -182,7 +180,7 @@ export default function Navbar() {
           </Link>
 
           <div className="w-full mt-4 mb-2" onClick={() => setIsOpen(false)}>
-            <CustomButton label="Sign Up" href="/signup" variant="mobile" />
+            <CustomButton label="Sign Up Now" href="/signup" variant="mobile" />
           </div>
         </div>
       </div>
