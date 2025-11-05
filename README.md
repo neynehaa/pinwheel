@@ -10,18 +10,6 @@
 - Tailwind CSS - Utility-first CSS framework
 - Next/font - Automatic font optimization and loading (Geist font used)
 
-📂 Project Structure
-pinwheel/
-├─ app/                  # Next.js app directory
-│  └─ page.tsx           # Main page component
-├─ components/           # Reusable UI components
-├─ public/               # Static assets (images, icons, fonts)
-├─ styles/               # Tailwind CSS and custom styles
-├─ next.config.js        # Next.js configuration
-├─ tsconfig.json         # TypeScript configuration
-├─ package.json          # Project dependencies and scripts
-└─ README.md             # Project documentation
-
 📈 Features
 - Single-page responsive application
 - Built with Next.js, Tailwind CSS, and TypeScript
